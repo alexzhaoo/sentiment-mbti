@@ -2,3 +2,5 @@ pandas
 tweepy
 numpy
 snsscrape
+ntscraper
+tqdm
