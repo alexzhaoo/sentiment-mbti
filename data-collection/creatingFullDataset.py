@@ -12,7 +12,7 @@ for filename in os.listdir(folder):
     if filename.endswith('.csv'):
         file = os.path.join(folder, filename)
         df = pd.read_csv(file)
-        df.drop(['twitter_id','date'], axis=1)
+        df.drop(['twitter_id','date'], axis=1, inplace=True)
         df['name'] = filename
 
         
