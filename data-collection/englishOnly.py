@@ -10,6 +10,8 @@ def cleandf(df):
 
     tweets = df['tweet']
 
+    cleanedTweets = []
+
     for tweet in tweets:   
         if isinstance(tweet,bytes):
             tweet = tweet.decode('uft-8', errors = 'ignore')
@@ -20,7 +22,10 @@ def cleandf(df):
 
         tweet = re.sub(r'\s+', ' ', tweet).strip()
 
-    df['tweet'] = tweets
+        cleanedTweets.append(tweet)
+
+    df['tweet'] = cleanedTweets    
+    
     return 0
 
 
