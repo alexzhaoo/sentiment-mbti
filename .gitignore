@@ -3,3 +3,6 @@ twitter-celebrity-tweets-data
 datasets/allTweets.csv
 datasets/englishdataset.csv
 datasets/regex.csv
+datasets/mbti_1.csv
+datasets/MBTI_dataset_100.csv
+datasets/newmbti.csv
