@@ -2,7 +2,7 @@ import pandas as pd
 
 
 df = pd.read_csv("datasets/MBTI_dataset_100.csv")
-
+df2 = pd.read_csv("datasets/regex.csv")
 df.drop([
     'total votes',
     'first letter votes percentage',
@@ -43,3 +43,6 @@ def truncate(name):
 df['name'] = df['name'].apply(truncate)
 
 df.to_csv("newmbti.csv",index = False)
+
+
+
